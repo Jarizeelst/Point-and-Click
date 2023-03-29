@@ -1,4 +1,89 @@
 body{
-    background-color: black;
+    background-color: navy;
     color: white;
+    display: grid;
+    grid-template-columns: auto 800px auto;
 }
+
+#mainTitle{
+    grid-row-start:1 ;
+    grid-column-start:2 ;
+    text-align: center;
+}
+/*Dialog Bar*/
+#dialogueBar{
+    bottom: 0px;
+    left: 0px;
+    width: 800px;
+    height: 64px;
+}
+
+#dialogueContent{
+    position: relative;
+
+}
+
+#mainCharacterSpeesh{
+    top: 0px;
+    left: 80px;
+}
+
+
+#gameWindow{
+    width: 800px;
+    height: 608px;
+    background-color: blue;
+    grid-row-start:2 ;
+    grid-column-start:2 ;
+    position: relative;
+}
+
+#mainCharacter{
+    left: 20px;
+    top: 20px;
+}
+#brownBar{
+    position: absolute;
+    background-color: #442c1c;
+    width: 800px;
+    height: 32px;
+    bottom: 0px;
+}
+
+#chest{
+    width: 39px;
+    height: 45px;
+    left: 100px;
+    top:  194px;
+    
+}
+/*Classes*/
+
+.gameObject{
+    position: absolute;
+    transition: all 1s ease-in-out;
+
+}
+
+.foreGround{
+    z-index: 100;
+}
+.speesh-bubble{
+    background:white ;
+    border-radius: 60px;
+    color: black;
+    padding: 5px 5px 5px 20px;
+    font-size: 12px;
+    opacity: 1;
+    width: 300px;
+    transition: all 1s ease-in-out;
+}
+
+.character{
+    z-index: 100;
+}
+
+.background{
+    z-index: 0;
+}
+

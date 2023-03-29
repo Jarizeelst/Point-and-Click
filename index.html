@@ -8,8 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-    hello world
+    <h1 id="mainTitle"></h1>
+    <div id="gameWindow">
+
+        <!--dialogue bar-->
+
+        <div id="dialogueBar" class="foreground gameObject">
+            <div id="dialogueContent">
+                <div id="brownBar" class="gameObject foreground"></div>
+                    <img id="hero" src="img/raven klein.png" alt="mainCharacter">
+                <div id="mainCharacterSpeesh" class="gameObject foreground speesh-bubble"></div>
+                 
+            </div>
+       </div> 
+
+       <!--foreground layer-->
+        <div id="chest"class= "gameObject foreground">
+            
+
+        </div>
+
+         <!--main character layer-->
+        <div id="mainCharacter" class="gameObject character">
+        <img src="img/raven klein.png" alt="mainCharacter">
+          </div>
+
+         <!--background layer-->
+         <div id="titlemap" class="gameObject background" >
+        <img src="img/titleMap.png" alt="titleMap">
+    </div>
+
+    </div>
     <h1 id="mainTitle"></h1>
     <script src="js/index.js"></script>
 </body> 

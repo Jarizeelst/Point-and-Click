@@ -4,45 +4,32 @@ body{
     display: grid;
     grid-template-columns: auto 800px auto;
 }
-
-#mainTitle{
-    grid-row-start:1 ;
-    grid-column-start:2 ;
+#mainTitle {
+    grid-row-start: 1;
+    grid-column-start: 2;
     text-align: center;
 }
-/*Dialog Bar*/
-#dialogueBar{
+
+/*Dialogue bar*/
+#dialogueBar {
     bottom: 0px;
     left: 0px;
     width: 800px;
     height: 64px;
 }
 
-#dialogueContent{
+#dialogueContent {
     position: relative;
-
+    width: 800px;
+    height: 64px;
 }
 
-#mainCharacterSpeesh{
+#mainCharacterSpeech {
     top: 0px;
     left: 80px;
 }
 
-
-#gameWindow{
-    width: 800px;
-    height: 608px;
-    background-color: blue;
-    grid-row-start:2 ;
-    grid-column-start:2 ;
-    position: relative;
-}
-
-#mainCharacter{
-    left: 20px;
-    top: 20px;
-}
-#brownBar{
+#brownBar {
     position: absolute;
     background-color: #442c1c;
     width: 800px;
@@ -50,40 +37,72 @@ body{
     bottom: 0px;
 }
 
-#chest{
-    width: 39px;
-    height: 45px;
-    left: 100px;
-    top:  194px;
-    
+#counterSpeech {
+    top: 0px;
+    right: 80px;
 }
-/*Classes*/
 
-.gameObject{
+#counterCharacter {
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+}
+
+
+#gameWindow {
+    width: 800px;
+    height: 608px;
+    background-color: blue;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    position: relative;
+}
+
+#mainCharacter {
+    left: 400px;
+    top: 170px;
+}
+
+#chest {
+    width: 32px;
+    height: 42px;
+    left: 380px;
+    top: 145px;
+}
+
+#statue {
+    width: 38px;
+    height: 64px;
+    left: 512px;
+    top: 130px;
+}
+
+/*Classes*/
+.gameObject {
     position: absolute;
     transition: all 1s ease-in-out;
-
+    /*background-color: #FFF;*/
 }
 
-.foreGround{
-    z-index: 100;
-}
-.speesh-bubble{
-    background:white ;
-    border-radius: 60px;
-    color: black;
-    padding: 5px 5px 5px 20px;
-    font-size: 12px;
-    opacity: 1;
-    width: 300px;
-    transition: all 1s ease-in-out;
+.foreground {
+    z-index: 1000;
 }
 
-.character{
+.character {
     z-index: 100;
 }
 
-.background{
+.background {
     z-index: 0;
 }
 
+.speech-bubble {
+    background: #ffffff;
+    border-radius: 60px;
+    color: #000;
+    padding: 5px 5px 5px 20px;
+    font-size: 12px;
+    opacity: 0;
+    width: 300px;
+    transition: all 1s ease-in-out;
+}

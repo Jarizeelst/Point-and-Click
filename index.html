@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Point and Click adventure</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>point and click adventure</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <h1 id="mainTitle"></h1>
     <div id="gameWindow">
-
         <!--dialogue bar-->
-
-        <div id="dialogueBar" class="foreground gameObject">
+        <div id="dialogueBar" class="gameObject foreground">
             <div id="dialogueContent">
                 <div id="brownBar" class="gameObject foreground"></div>
-                    <img id="hero" src="img/raven klein.png" alt="mainCharacter">
-                <div id="mainCharacterSpeesh" class="gameObject foreground speesh-bubble"></div>
-                 
+
+                <img id="hero" class="gameObject foreground" src="img/raven klein.png" alt="main character">
+                <div id="mainCharacterSpeech" class="gameObject foreground speech-bubble">...</div>
+                <div id="counterSpeech" class="gameObject foreground speech-bubble">...</div>
+                <img id="counterCharacter" class="gameObject foreground" src="img/portairStatue.png"
+                    alt="counter character">
             </div>
-       </div> 
-
-       <!--foreground layer-->
-        <div id="chest"class= "gameObject foreground">
-            
-
         </div>
 
-         <!--main character layer-->
+        <!--foreground layer-->
+        <div id="chest" class="gameObject foreground"></div>
+        <div id="statue" class="gameObject foreground"></div>
+
+        <!--main character layer-->
         <div id="mainCharacter" class="gameObject character">
-        <img src="img/raven klein.png" alt="mainCharacter">
-          </div>
+            <img src="img/raven klein.png" alt="main character">
+        </div>
 
-         <!--background layer-->
-         <div id="titlemap" class="gameObject background" >
-        <img src="img/titleMap.png" alt="titleMap">
+        <!--background layer-->
+        <div id="titlemap" class="gameObject background">
+            <img src="img/titleMap1.png" alt="tilemap">
+        </div>
     </div>
-
-    </div>
-    <h1 id="mainTitle"></h1>
+    <audio id="characterAudio">
+        <source src="audio/Gibberish - Sound Effect_01.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="counterAudio">
+        <source src="audio/high pitch voice.mp3" type="audio/mpeg">
+    </audio>
     <script src="js/index.js"></script>
-</body> 
+</body>
+
 </html>
